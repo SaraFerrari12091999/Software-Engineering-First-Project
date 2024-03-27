@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="map.js"></script>
+  <script src="login.js"></script>
+</head>
+<body>
+    
+    <div class="mappa_prova">
+        <button class="ciao-btn" onclick="toggleMenu()">...</button>
+        <div id="map" class="map"></div>
+        <div class="overlay">
+            <div class="overlay-image"></div>
+            <div class="colonna">
+            <h1 style="text-decoration: underline; font-style: Baskerville; color: black;" class="testo"; id="testo">Widgets</h1>
+
+            <button class="overlay-button"  onclick="toggleFiltri()" style="background-color: white; color:  black; width: 600px; height: 90px; font-size: 60px; ">Filtro<img src="https://www.mondomobileweb.it/wp-content/uploads/2016/07/timextra-1.jpg" alt="immagine1" class="img_fil" height="70px" width="70px"></button>
+            <div class="overlay_filtri">
+                <label>Filtri</label>
+                <dl class="checkboxes">
+                    <dt><input type="checkbox" id="orso" class="larger"> orso</dt>
+                    <dt><input type="checkbox" id="incendio" class="larger"> incendio</dt>
+                    <dt><input type="checkbox" id="valanga" class="larger"> valanga</dt>
+                    <dt><input type="checkbox" id="zonaDiCaccia" class="larger"> zona di caccia</dt>
+                </dl>
+                <div class="bottoni">
+                    <button id="clickFiltro" style="font-size: 50px; height: 90px; width: 90px; background-color: black; color: white;" onclick="toggleFiltri()"><p>&#x21B6;</p></button> 
+                    <button style="font-size: 50px; height: 90px; width: 500px; background-color: black; color: white;" onclick="getPericoli()">Filtra </button>
+                </div>
+            </div>
+            <button class="overlay-button2" onclick="Segnala_Func()" style="background-color: white; color:  black; width: 600px; height: 90px; font-size: 60px;">Segnala<img src="https://thumbs.dreamstime.com/z/uomo-con-il-megafono-21757168.jpg" alt="Immagine" class="img_segn" height="70px" width="70px"></button>
+            <div class="overlay_segn">
+                <select class="opzioni" id="opzioni" style="font-size: 50px; height: 90px; width: 500px; ">
+                    <option value="orso">orso</option>
+                    <option value="incendio">incendio</option>
+                    <option value="valanga">valanga</option>
+                    <option value="zona di caccia">zona di caccia</option>
+                  </select>
+                  <div class="bottoni">
+                    <button id="clickFiltro" style="font-size: 50; height: 90px; width: 90px; background-color: black; color: white;" onclick="Segnala_Func()"><p>&#x21B6;</p></button> 
+                    <button type="submit" onclick="prova2()" id="segnala" style="font-size: 50px; height: 90px; width: 500px; background-color: black; color: white;">Seleziona</button>
+                </div>
+            </div>
+
+            <button class="overlay-button3" onclick="Sos_Button()" style="background-color: white; color:  black; width: 600px; height: 90px; font-size: 60px;">SOS<img src="https://i.ibb.co/4FQL4n3/photo-2023-07-20-15-17-09.jpg" alt="immagine2" class="img_sos" height="70px" width="70px"></button>
+            <button class="overlay-button4" style="background-color: white; color:  black; width: 600px; height: 90px; font-size: 60px;">Meteo</button>
+            <button class="overlay-button5" style="background-color: white; color:  black; width: 600px; height: 90px; font-size: 60px;">Bussola</button>
+            <button class="overlay-button6" style="background-color: white; color:  black; width: 600px; height: 90px; font-size: 60px;">Percorsi</button>
+            <div class="sotto">
+                <button class="overlay-button7" style="width: 110px; height: 110px; background-color: white; border-color: white;"><img src="https://thumbs.dreamstime.com/z/icona-dell-assistente-del-supporto-tecnico-85316728.jpg" alt="Immagine" class="img_segn" height="100px" width="100px "></button>
+                <button class="overlay-button8" style="background-color: rgba(255, 25, 0, 0.866); color:  white; width: 600px; height: 90px; font-size: 60px;">Logout</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

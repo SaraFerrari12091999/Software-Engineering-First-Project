@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <title>Registrazione</title>
+  <link rel="stylesheet" href="registration.css">
+<script src="registration.js"></script> 
+</head>
+
+<body>
+  <div class="registrazione" style="background-color: rgb(153, 240, 153);" >
+  <button type="button" onclick="goBack()" class="click-reg" style="color:black;background-color:rgb(153, 240, 153);border-color: rgb(153, 240, 153);"><p>&#x21B6;</p></button>
+    
+    <div class="title-reg">
+    <h1>Registrazione</h1>
+    </div>
+    
+    <div class="action-reg">
+      
+      <div class="label-c">
+        <label>Il tuo nome </label>
+      </div>
+      <input type="text" name="nomeCognome" placeholder="NomeCognome" id="nomeCognome" class="regbox" required><br>
+      
+      <div class="label-c">
+        <label>Numero di cellulare</label>
+      </div>
+      <input type="text" name="telefono" placeholder="Telefono" id="telefono" class="regbox" tag = "pass" required><br>
+      <span id="telefono-error" style="color: red;"></span>
+      
+      <div class="label-c">
+        <label>E-mail</label>
+      </div>
+      <input type="email" name="email" placeholder="Email" id="email" class="regbox" required><br>
+      
+      <div class="label-c">
+        <label>Password</label>
+      </div>
+      <input type="password" name="password" placeholder="Password" id="password" class="regbox" required><br>
+      
+      <div class="label-c">
+        <label>Check Password</label>
+      </div>
+      <input type="password" name="checkPassword" placeholder="CheckPassword" id="checkPassword" class="regbox" required><br>
+      
+      <div class="privacy">
+      <input type="checkbox"  name="checkbox" id="checkbox" value="true" class="check" required>
+      
+      
+      <label>I accept the terms and conditions by authorizing the processing of my personal data in accordance with the privacy policy.</label>
+      </div>
+
+      <button type="submit" onclick="registration()" id="reg" class="reg" style="background-color: black; color:  white">Registration</button>
+
+    </div>
+  </div>
+</body>
+</html>

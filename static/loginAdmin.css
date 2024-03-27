@@ -1,0 +1,90 @@
+.Ad-title{
+
+    margin-top: 1px;
+    margin-bottom: 0px;
+    height: 40px;
+
+}
+
+.click-logAd {
+
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align:left;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    height: 30px;
+    
+    
+} 
+
+.click-logAd{
+
+    font-size: 30px;
+    margin-top: 30px;
+    width: 200px;
+
+}
+
+html, body, .loginAd{
+
+    height: 100%;
+    width: 100%;
+    margin:  0;
+    padding: 0;
+}
+
+.loginAd{
+
+    background-color: rgb(153, 240, 153);
+
+}
+
+.logAd-action{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.total-butt{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    margin-left: 3px;
+
+}
+
+.logAd{
+
+    width: 400px;
+    height: 30px
+
+}
+
+.label-c{
+
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+
+}
+
+.button-Ad{
+
+    font-size: 18px;
+    width: 220px;
+    height: 40px;
+    margin-top: 62px;
+    margin-left: 30px;
+}

@@ -1,0 +1,100 @@
+.click-log, .click-log1 {
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    height: 30px;  
+} 
+
+.space-title{
+
+    margin-top: 1px;
+    margin-bottom: 0px;
+    height: 40px;
+}
+
+.click-log{
+
+    font-size: 30px;
+    margin-top: 0px;
+
+}
+
+html, body, .login{
+
+    height: 100%;
+    width: 100%;
+    margin:  0;
+    padding: 0;
+    
+}
+
+.login{
+
+    background-color: rgb(153, 240, 153);
+    
+}
+
+.log-action{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+    
+}
+
+.log{
+
+    width: 400px;
+    height: 30px
+
+}
+
+.label-c{
+
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+
+}
+
+.button-log{
+
+    font-size: 18px;
+    margin-right: 200px;
+    width: 200px;
+    height: 40px;
+
+}
+
+.click-log1{
+    height: 50%;
+    float: right;
+    font-size: 17px;
+    margin-top: 0px;
+    margin-right: 0px;
+    align-items: left;
+}
+
+.loginForm {
+    align-items: left;
+    
+
+  }
+
+.bottoni{
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 2px;         
+}

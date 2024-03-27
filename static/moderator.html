@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moderator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="map.js"></script>
+    <script src="moderator.js"></script>
+    
+
+</head>
+<body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            getReports(); // Call the function when the page is loaded
+            setInterval(getReports, 20000);
+        });
+</script>
+<form id="mapForm">
+    <h1>Pericoli da revisionare:</h1>
+</form>
+<section id="json-container"></section>
+
+</body>
+</html>

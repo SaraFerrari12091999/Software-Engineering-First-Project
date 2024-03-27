@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="directAccess.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="directAccess.js"></script>
+</head>
+<body>
+  <div class="mappa_prova">
+    <button class="ciao-btn" onclick="toggleMenu()">...</button>
+    <div id="map" class="map"></div>
+    <div class="overlay">
+        <div class="overlay-image"></div>
+        <div class="colonna">
+        <h1 style="text-decoration: underline; font-style: Baskerville; color: black;" class="testo"; id="testo">Widgets</h1>
+        <button class="overlay-button" onclick="toggleFiltri()"  style="background-color: white; color:  black; width: 600px; height: 90px; font-size: 60px; ">Filtro</button>
+          <div class="sotto">
+            <button class="overlay-button7" style="width: 110px; height: 110px; background-color: white; border-color: white;"><img src="https://thumbs.dreamstime.com/z/icona-dell-assistente-del-supporto-tecnico-85316728.jpg" alt="Immagine" class="img_segn" height="100px" width="100px "></button>
+          </div>
+        </div>
+
+        <script>
+            var map = L.map('map').setView([0, 0], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+
+
+            function zoomIn() {
+                map.zoomIn();
+            }
+
+            function zoomOut() {
+                map.zoomOut();
+            }
+
+            function toggleMenu() {
+                var overlay = document.querySelector('.mappa_prova .overlay');
+                overlay.classList.toggle('active');
+            }
+
+        </script>
+    </div>
+</div>
+</body>
+</html>
